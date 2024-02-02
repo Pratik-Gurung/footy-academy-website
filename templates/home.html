@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jovian Careers</title>
+    <title>Footy Academy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,7 +20,7 @@
     {% include 'nav.html' %}
     <img class="img-fluid" src="https://9cd21469-0ec1-48b9-8e06-ff937d901e66-00-27okb21mlsr0f.spock.replit.dev/static/footballtraining.jpg" height="320">
     <div class="container">
-      <h1 class="text-center mt-2 mb-2" >Jovian Careers</h1>
+      <h1 class="text-center mt-2 mb-2" >Footy Academy</h1>
       <div class="row" style="margin-bottom: 16px">
         <div class="col-md-6">
         <p class="lead">
@@ -30,14 +30,14 @@
         <div class="d-none d-md-block col-md-6">
         <img src="/static/soccer-coach.jpg" style="height: 320px; border-radius: 4px;">
       </div>
-      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+      <h2 class="text-center mt-2 mb-4">Open Sessions</h2>
       <div>
-        {% for job in jobs %}
+        {% for training_group in training_groups %}
           {% include 'jobitem.html' %}
         {% endfor %}
       </div>
       <div class="text-center">
-        <a class="btn btn-primary btn-lg" href="mailto:pratikhazard@gmail.com?subject=Questions%20about%20Job%20Openings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20question%3A%20%3Center%20question%20here%3E">Contact Us</a>
+        <a class="btn btn-primary btn-lg" href="mailto:pratikhazard@gmail.com?subject=FootyAcademy%3A%20Enquires%20&body=Client's%20name%3A%0D%0A%0D%0AGuardian's%20name%3A%0D%0A%0D%0AQuestions%3A%0D%0A%0D%0A%0D%0A%0D%0A">Contact Us</a>
       </div>
     </div>
     {% include 'footer.html' %}
